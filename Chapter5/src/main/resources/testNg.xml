@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="suibian">
+    <test name="login">//每个test 标签必须写name 否则报错
+        <classes>
+            <class name="com.course.testNg.suite.SuiteConfig"/>
+            <class name="com.course.testNg.suite.LoginTest"/>
+        </classes>
+    </test>
+    <test name="pay">
+        <classes>
+            <class name="com.course.testNg.suite.SuiteConfig"/>
+            <class name="com.course.testNg.suite.PayTest"/>
+        </classes>
+    </test>
+
+</suite>

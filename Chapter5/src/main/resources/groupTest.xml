@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="suibian1">
+    <test name="runAll">//每个test 标签必须写name 否则报错
+        <classes>
+            <class name="com.course.testNg.Group.StudentGroupClass1"/>
+            <class name="com.course.testNg.Group.StudentGroupClass2"/>
+            <class name="com.course.testNg.Group.TeacherGroup"/>
+        </classes>
+    </test>
+    <test name="onlyRunStudent">//每个test 标签必须写name 否则报错
+        <groups>
+            <run>
+                <include name="student"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.course.testNg.Group.StudentGroupClass1"/>
+            <class name="com.course.testNg.Group.StudentGroupClass2"/>
+            <class name="com.course.testNg.Group.TeacherGroup"/>
+        </classes>
+    </test>
+</suite>
