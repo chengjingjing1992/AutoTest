@@ -2,6 +2,7 @@
 <suite name="paraTest">
     <test name="para">
         <classes>// 共同运行xml 文件进行 传参测试
+
             <parameter name="name" value="zhangsan"/>
             <parameter name="age" value="26"/>
             <class name="com.course.testNg.parameter.ParameterTest"/>

@@ -8,6 +8,6 @@ public class ParameterTest {
     @Test
     @Parameters({"name","age"})//注意这里怎么写
     public void parameterTest(String name,int age){
-        System.out.println("name="+name +"  ，  age="+age);
+        System.out.println("name="+name +"  ，   age="+age);
     }
 }
