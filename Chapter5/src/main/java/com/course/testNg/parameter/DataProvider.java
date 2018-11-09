@@ -22,6 +22,7 @@ public class DataProvider {
         return o;
     }
 
+
     /**
      * 根据不同的方法  传不同的参数
      * @param name
