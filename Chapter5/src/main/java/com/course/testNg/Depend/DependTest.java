@@ -12,7 +12,7 @@ public class DependTest {
         System.out.println("test1()..run");
         throw new RuntimeException();//故意抛出一个异常 让test1 运行失败
     }
-    @Test(dependsOnMethods = {"test1"})  //  注意这里怎么写：dependsOnMethods = {"test1方法名"}
+    @Test(dependsOnMethods = {"test1"})  //  注意这里怎么写：dependsOnMethods = {"test1"}
     public void test2(){
         System.out.println("test2()..run");
     }
@@ -51,5 +51,5 @@ public class DependTest {
 //
 //        ===============================================
 //        Default Suite
-//        Total tests run: 2, Passes: 0, Failures: 1, Skips: 1                                             失败1个  忽略一个
+//        Total tests run: 2, Passes: 0, Failures: 1, Skips: 1
 
