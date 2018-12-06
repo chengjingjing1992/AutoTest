@@ -8,5 +8,19 @@
     "response":{
       "text":"getdemo"
     }
+  },
+  {
+    "description":"模拟一个带参数的get请求",
+    "request":{
+      "uri":"/getwithparm",
+      "method":"get",
+      "queries":{
+        "name":"zhangsan",
+        "age":"18"
+      }
+    },
+    "response":{
+      "text":"我胡汉三又回来了"
+    }
   }
 ]
