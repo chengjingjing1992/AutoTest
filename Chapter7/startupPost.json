@@ -7,10 +7,10 @@
       "queries":{
         "name":"zangsan",
         "age":"25"
-      },
-      "response":{
-        "text":"ssssssssss"
       }
+    },
+    "response":{
+      "text":"ssssssssss"
     }
   }
 ]
