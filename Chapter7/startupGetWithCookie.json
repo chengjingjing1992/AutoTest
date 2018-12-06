@@ -2,7 +2,7 @@
   {
     "description":"带cookie的请求",
     "request":{
-      "uri":"get/with/cookies",
+      "uri":"/get/with/cookies",
       "method":"get",
       "cookies":{
         "login":"true"
