@@ -1,21 +1,21 @@
 [
   {
-    "description":"第一个携带cookie的post 请求",
+    "description":"这是一个带cookies信息的post请求",
     "request":{
-      "uri":"/post/whith/cookie",
+      "uri":"/post/with/cookies",
       "method":"post",
       "cookies":{
         "login":"true"
       },
       "json":{
-        "name":"zhangsan",
-        "age":"66"
+        "name":"huhansan",
+        "age":"18"
       }
     },
     "response":{
       "status":200,
       "json":{
-        "zhangsan":"success",
+        "huhansan":"success",
         "status":"1"
       }
     }
