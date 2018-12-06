@@ -4,7 +4,7 @@
     "request":{
       "uri":"/post/whith/cookie",
       "method":"post",
-      "forms":{
+      "json":{
         "name":"zhangsan",
         "age":"66"
       },
@@ -13,8 +13,11 @@
       }
     },
     "response":{
-      "text":"this is a POST request that need with cookies :Writen By Chengjingjing"
+      "status":"200",
+      "json":{
+        "zhangsan":"success",
+        "status":"1"
+      }
     }
-
   }
 ]
