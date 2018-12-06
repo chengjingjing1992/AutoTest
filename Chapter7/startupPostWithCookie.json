@@ -3,10 +3,10 @@
     "description":"第一个携带cookie的post 请求",
     "request":{
       "uri":"/post/whith/cookie",
+      "method":"post",
       "cookies":{
         "login":"true"
       },
-      "method":"post",
       "json":{
         "name":"zhangsan",
         "age":"66"
