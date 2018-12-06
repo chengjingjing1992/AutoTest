@@ -1,0 +1,16 @@
+[
+  {
+    "description":"第一个带参数的post请求",
+    "request":{
+      "uri":"/demoPost",
+      "method":"post",
+      "queries":{
+        "name":"zangsan",
+        "age":"25"
+      },
+      "response":{
+        "text":"ssssssssss"
+      }
+    }
+  }
+]
