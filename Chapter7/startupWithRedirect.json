@@ -19,7 +19,7 @@
       "uri":"/redirect/new"
     },
     "response":{
-      "text":"重定向成功啦"
+      "text":"重定向成功啦 redirect is successful!!"
     }
   }
 
