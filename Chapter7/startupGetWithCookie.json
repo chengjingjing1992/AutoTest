@@ -1,5 +1,18 @@
 [
   {
+    "description":"这是一个可以得到cookie的get 请求",
+    "request":{
+      "uri":"/getCookie",
+      "method":"get"
+    },
+    "response":{
+      "text":" successful",
+      "cookies":{
+        "login":"true"
+      }
+    }
+  },
+  {
     "description":"带cookie的请求",
     "request":{
       "uri":"/get/with/cookies",
