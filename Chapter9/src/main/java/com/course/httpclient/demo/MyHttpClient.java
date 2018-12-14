@@ -7,7 +7,6 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.testng.annotations.Test;
 
-import javax.swing.text.html.parser.Entity;
 import java.io.IOException;
 
 public class MyHttpClient {
