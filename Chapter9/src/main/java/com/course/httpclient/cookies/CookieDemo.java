@@ -34,7 +34,7 @@ public class CookieDemo {
 
     @Test  //获取cookie  的测试方法
     public void testGetCookie() throws IOException {
-        HttpGet get=new HttpGet(this.baseUrl+resourceBundle.getString("getCookieUrl"));
+        HttpGet get=new HttpGet(this.baseUrl+this.resourceBundle.getString("getCookieUrl"));
         HttpClient httpClient=new DefaultHttpClient();
         HttpResponse response=httpClient.execute(get);
         String entity= EntityUtils.toString(response.getEntity());
