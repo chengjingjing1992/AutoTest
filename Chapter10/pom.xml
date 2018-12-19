@@ -19,6 +19,12 @@
             </plugin>
         </plugins>
     </build>
+    <!--
+    下面两个<groupId>io.springfox</groupId> 读到这个swagger.version>
+    -->
+    <properties>
+        <swagger.version>2.6.1</swagger.version>
+    </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -29,6 +35,27 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <!--suppress UnresolvedMavenProperty -->
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <!--<dependency> 这好像是一个插件目的好像是不用写 getset 方法 我这里其实可以不用这个插件 我选择写User里 的get set 方法-->
+            <!--<groupId>org.projectlombok</groupId>-->
+            <!--<artifactId>lombok</artifactId>-->
+            <!--<version>1.16.14</version>-->
+        <!--</dependency>-->
+
+
+
+
+
     </dependencies>
 
 
