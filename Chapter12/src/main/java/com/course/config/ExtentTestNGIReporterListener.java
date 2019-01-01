@@ -1,5 +1,4 @@
 package com.course.config;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.ResourceCDN;
@@ -119,6 +118,7 @@ public class ExtentTestNGIReporterListener {
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
         htmlReporter.config().setTheme(Theme.STANDARD);
         htmlReporter.config().setCSS(".node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}");
+//        htmlReporter.config().setEncoding("GBK");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         extent.setReportUsesManualConfiguration(true);
