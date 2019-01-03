@@ -36,6 +36,7 @@ public class UserManager {
         Cookie cookie = new Cookie("login","true");
         response.addCookie(cookie);
         log.info("查看到的结果是"+i);
+        log.info("传入的User="+user.toString());
         if(i==1){
             return true;
         }
@@ -79,6 +80,7 @@ public class UserManager {
         Boolean x = verifyCookies(request);
         if(x==true){
             List<User> users = template.selectList("getUserInfo",user);
+            log.info("传入的user="+user.toString());
             log.info("getUserInfo获取到的用户数量是" +users.size());
             return users;
         }else {

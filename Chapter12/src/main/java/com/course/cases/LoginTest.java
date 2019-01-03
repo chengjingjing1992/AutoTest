@@ -34,6 +34,7 @@ public class LoginTest {
 
     @Test(groups = "loginTrue",description = "用户成功登陆接口")
     public void loginTrue() throws IOException {
+        System.out.println("loginTrue()......");
 
         SqlSession session = DatabaseUtil.getSqlSession();
         LoginCase loginCase = session.selectOne("loginCase",1);//取数据库中id为1 的数据
@@ -43,16 +44,22 @@ public class LoginTest {
         //第一步是发送请求
         String result=getResult( loginCase);
 
+        System.out.println("loginTrue()方法中的result="+result);
+        System.out.println("loginCase.getExpected()="+loginCase.getExpected());
+
         //燃后是验证结果
         Assert.assertEquals(loginCase.getExpected(),result);
 
     }
     private String getResult(LoginCase loginCase) throws IOException {
+
         //下边的代码为写完接口的测试代码
         HttpPost post = new HttpPost(TestConfig.loginUrl);
         JSONObject param = new JSONObject();
         param.put("userName",loginCase.getUserName());
+        System.out.println("loginCase.getUserName()="+loginCase.getUserName());
         param.put("password",loginCase.getPassword());
+        System.out.println("loginCase.getPassword()="+loginCase.getPassword());
         //设置请求头信息 设置header
         post.setHeader("content-type","application/json");
         //将参数信息添加到方法中
@@ -75,6 +82,7 @@ public class LoginTest {
 
     @Test(groups = "loginFalse",description = "用户登陆失败接口")
     public void loginFalse() throws IOException {
+        System.out.println("loginFalse()......");
         SqlSession session = DatabaseUtil.getSqlSession();
         LoginCase loginCase = session.selectOne("loginCase",2);//取数据库 中id为2 的数据
         System.out.println(loginCase.toString());
@@ -82,8 +90,10 @@ public class LoginTest {
 
         //第一步是发送请求
         String result=getResult( loginCase);
-
+        System.out.println("loginFalse()方法中的"+result);
         //燃后是验证结果
+        System.out.println("loginCase.getExpected()="+loginCase.getExpected());
+        System.out.println("result="+result);
         Assert.assertEquals(loginCase.getExpected(),result);
 
     }

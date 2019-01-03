@@ -19,7 +19,7 @@ public class AddUserTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "添加用户接口接口测试")
     public void addUser() throws IOException, InterruptedException {
-
+        System.out.println("addUser()......");
         SqlSession session = DatabaseUtil.getSqlSession();
         AddUserCase addUserCase = session.selectOne("addUserCase",1);
         System.out.println(addUserCase.toString());
@@ -28,6 +28,7 @@ public class AddUserTest {
         //发送请求验证请求
         //下边的代码为写完接口的测试代码
         String result = getResult(addUserCase);
+        System.out.println("result==="+result.toString());
 
         /**
          * 可以先讲
@@ -35,7 +36,7 @@ public class AddUserTest {
         //查询用户看是否添加成功
         Thread.sleep(2000);
         User user = session.selectOne("addUser",addUserCase);
-        System.out.println("00000==="+addUserCase.toString());
+        System.out.println("addUserCase.toString()==="+addUserCase.toString());
         System.out.println(user.toString());
 
         Assert.assertEquals(addUserCase.getExpected(),result);
@@ -66,7 +67,8 @@ public class AddUserTest {
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println(result);
+        System.out.println("获取响应结果rslult="+result);
+        System.out.println("response.getEntity().toString()="+response.getEntity().toString());
         return result;
     }
 
