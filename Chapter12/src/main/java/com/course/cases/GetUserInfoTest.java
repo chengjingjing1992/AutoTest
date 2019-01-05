@@ -38,7 +38,7 @@ public class GetUserInfoTest {
          * 下边三行可以先讲
          */
         Thread.sleep(2000);
-        User user = session.selectOne(getUserInfoCase.getExpected(),getUserInfoCase);
+        User user = session.selectOne("getUserInfo",getUserInfoCase);
         System.out.println("自己查库获取用户信息:"+user.toString());
 
         List userList = new ArrayList();
@@ -48,7 +48,9 @@ public class GetUserInfoTest {
         System.out.println("获取用户信息:"+jsonArray.toString());
         System.out.println("调用接口获取用户信息:"+resultJson.toString());
 
-        Assert.assertEquals(jsonArray,jsonArray1);
+        FastJsonDiff.compareJson(jsonArray,jsonArray1,null);
+
+//        Assert.assertEquals(jsonArray,jsonArray1);
 //        Assert.assertEquals(jsonArray,resultJson);
 
 
@@ -57,7 +59,7 @@ public class GetUserInfoTest {
     private JSONArray getJsonResult(GetUserInfoCase getUserInfoCase) throws IOException {
         HttpPost post = new HttpPost(TestConfig.getUserInfoUrl);
         JSONObject param = new JSONObject();
-        param.put("id",getUserInfoCase.getUserId());
+        param.put("id",2);
         //设置请求头信息 设置header
         post.setHeader("content-type","application/json");
         //将参数信息添加到方法中
