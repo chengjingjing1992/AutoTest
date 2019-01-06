@@ -14,6 +14,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 public class AddUserTest {
 
@@ -34,10 +35,12 @@ public class AddUserTest {
          * 可以先讲
          */
         //查询用户看是否添加成功
-        Thread.sleep(2000);
-        User user = session.selectOne("addUser",addUserCase);
+        Thread.sleep(100000);
+
+        User user = session.selectOne("findAddedUser",addUserCase);
+        Thread.sleep(4000);
         System.out.println("addUserCase.toString()==="+addUserCase.toString());
-        System.out.println(user.toString());
+//        System.out.println(user.toString());
 
         Assert.assertEquals(addUserCase.getExpected(),result);
 

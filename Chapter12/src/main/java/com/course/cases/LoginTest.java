@@ -34,7 +34,7 @@ public class LoginTest {
 
     @Test(groups = "loginTrue",description = "用户成功登陆接口")
     public void loginTrue() throws IOException {
-        System.out.println("loginTrue()......");
+        System.out.println("登录成功loginTrue()......");
 
         SqlSession session = DatabaseUtil.getSqlSession();
         LoginCase loginCase = session.selectOne("loginCase",1);//取数据库中id为1 的数据
@@ -67,7 +67,7 @@ public class LoginTest {
         post.setEntity(entity);
         //声明一个对象来进行响应结果的存储
         String result;
-        //执行post方法
+        //执行post方法                                            //在useManager 方法里返回的是Boolean 类型 到result就是String类型
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
@@ -80,12 +80,12 @@ public class LoginTest {
 
 
 
-    @Test(groups = "loginFalse",description = "用户登陆失败接口")
+    @Test(groups = "loginFalse",description = "用户登陆失败接口：用户名不存在")
     public void loginFalse() throws IOException {
-        System.out.println("loginFalse()......");
+        System.out.println("用户登录失败接口loginFalse()......");
         SqlSession session = DatabaseUtil.getSqlSession();
         LoginCase loginCase = session.selectOne("loginCase",2);//取数据库 中id为2 的数据
-        System.out.println(loginCase.toString());
+        System.out.println("用户名不存在的情况登录失败 :"+loginCase.toString());
         System.out.println(TestConfig.loginUrl);
 
         //第一步是发送请求
@@ -95,6 +95,21 @@ public class LoginTest {
         System.out.println("loginCase.getExpected()="+loginCase.getExpected());
         System.out.println("result="+result);
         Assert.assertEquals(loginCase.getExpected(),result);
+
+    }
+    @Test(groups = "loginFalse",description = "用户登陆失败接口：用户名正确密码错误")
+    public void loginFalsePwdError() throws IOException {
+        System.out.println("用户登录失败接口loginFalsePwdError()......");
+        SqlSession session =DatabaseUtil.getSqlSession();
+        LoginCase loginCase=session.selectOne("loginCase",3);//取数据库 中id为3 的数据 即用户名在user 表中存在但是密码错误
+        System.out.println("用户名存在但密码错误的情况登录失败 :"+loginCase.toString());
+        System.out.println(TestConfig.loginUrl);
+        //第一步是发送请求
+        String result=getResult( loginCase);
+        //燃后是验证结果
+        System.out.println("loginCase.getExpected()="+loginCase.getExpected());
+        Assert.assertEquals(loginCase.getExpected(),result);
+
 
     }
 

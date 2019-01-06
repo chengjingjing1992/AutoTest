@@ -59,7 +59,7 @@ public class GetUserInfoTest {
     private JSONArray getJsonResult(GetUserInfoCase getUserInfoCase) throws IOException {
         HttpPost post = new HttpPost(TestConfig.getUserInfoUrl);
         JSONObject param = new JSONObject();
-        param.put("id",2);
+        param.put("id",getUserInfoCase.getUserId());
         //设置请求头信息 设置header
         post.setHeader("content-type","application/json");
         //将参数信息添加到方法中

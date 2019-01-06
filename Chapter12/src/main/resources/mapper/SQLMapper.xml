@@ -33,7 +33,7 @@
     </select>
 
     <!--添加用户接口-->
-    <select id="addUser" parameterType="com.course.model.AddUserCase" resultType="com.course.model.User">
+    <select id="findAddedUser" parameterType="com.course.model.AddUserCase" resultType="com.course.model.User">
         select * from user where
         userName=#{userName}
         and password=#{password}

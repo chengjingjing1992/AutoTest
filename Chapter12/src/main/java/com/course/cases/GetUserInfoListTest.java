@@ -25,18 +25,23 @@ public class GetUserInfoListTest {
     public void getUserListInfo() throws IOException, InterruptedException {
         System.out.println("getUserListInfo()......");
         SqlSession session = DatabaseUtil.getSqlSession();
+        //获取id为1 的记录作为实体 仅性别为man
         GetUserListCase getUserListCase = session.selectOne("getUserListCase",1);
+        //获取id为33 的记录作为实体 仅年龄为22
+        GetUserListCase getUserListCaseAge22 = session.selectOne("getUserListCase",2);
+        //获取id为33 的记录作为实体 仅年龄为22且性别man
+        GetUserListCase getUserListCase3 = session.selectOne("getUserListCase",2);
         System.out.println(getUserListCase.toString());
         System.out.println(TestConfig.getUserListUrl);
 
 
         //下边为写完接口的代码
-        JSONArray resultJson = getJsonResult(getUserListCase);
+        JSONArray resultJson = getJsonResult(getUserListCaseAge22);
         /**
          * 可以先讲
          */
-        Thread.sleep(2000);
-        List<User> userList = session.selectList(getUserListCase.getExpected(),getUserListCase);
+        Thread.sleep(5000);
+        List<User> userList = session.selectList("getUserList",getUserListCaseAge22);
         for(User u : userList){
             System.out.println("list获取的user:"+u.toString());
         }
