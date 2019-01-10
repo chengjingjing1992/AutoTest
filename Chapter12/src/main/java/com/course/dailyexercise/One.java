@@ -3,10 +3,8 @@ package com.course.dailyexercise;
 import org.testng.annotations.Test;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class One {
 
@@ -40,18 +38,26 @@ public class One {
 
 
         for(int j=0;j<arr.length-1;j++){
-            for( int i=0;i<arr.length-1;i++){
-
+            for(int i=0;i<arr.length-1;i++){
                 int temp;
-                if (arr[i]>arr[i+1]){
+                if(arr[i]<arr[i+1]){
                     temp=arr[i];
                     arr[i]=arr[i+1];
                     arr[i+1]=temp;
+
                 }
 
             }
         }
 
         System.out.println(Arrays.toString(arr));
+    }
+    @Test
+    public void test4(){//Date类型转为String
+        Date date=new Date();
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String strDate=sdf.format(date);
+        System.out.println(strDate);
+
     }
 }
