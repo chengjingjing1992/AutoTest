@@ -48,7 +48,59 @@ public class LoginTest {
         System.out.println("loginCase.getExpected()="+loginCase.getExpected());
 
         //燃后是验证结果
-        Assert.assertEquals(loginCase.getExpected(),result);
+        Assert.assertEquals(loginCase.getExpected(),result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        );
 
     }
     private String getResult(LoginCase loginCase) throws IOException {

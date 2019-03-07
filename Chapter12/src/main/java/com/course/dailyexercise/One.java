@@ -1,5 +1,6 @@
 package com.course.dailyexercise;
 
+import com.mysql.jdbc.StringUtils;
 import org.testng.annotations.Test;
 
 import java.awt.*;
@@ -59,5 +60,9 @@ public class One {
         String strDate=sdf.format(date);
         System.out.println(strDate);
 
+    }
+    @Test
+    public void testStringUtils(){
+//        System.out.println(StringUtils.);
     }
 }
