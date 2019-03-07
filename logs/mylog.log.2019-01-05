@@ -1,0 +1,589 @@
+2019-01-05 13:53:00.534 [main] INFO  com.course.Application - Starting Application on 53GZVMA29KMR9N2 with PID 12848 (C:\Users\Administrator\IdeaProjects\AutoTest\Chapter13\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\AutoTest)
+2019-01-05 13:53:00.549 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2019-01-05 13:53:00.671 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d8995e: startup date [Sat Jan 05 13:53:00 CST 2019]; root of context hierarchy
+2019-01-05 13:53:02.213 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2019-01-05 13:53:02.768 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$60b58722] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-05 13:53:03.339 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2019-01-05 13:53:03.427 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-01-05 13:53:03.428 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-01-05 13:53:03.635 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-05 13:53:03.636 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2965 ms
+2019-01-05 13:53:03.841 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-05 13:53:03.853 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-05 13:53:03.854 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-05 13:53:03.854 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-05 13:53:03.854 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-05 13:53:05.134 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2019-01-05 13:53:05.136 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2019-01-05 13:53:05.136 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2019-01-05 13:53:05.136 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2019-01-05 13:53:05.137 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-05 13:53:05.141 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-05 13:53:05.148 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-05 13:53:05.149 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-05 13:53:05.154 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-05 13:53:05.154 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-05 13:53:05.394 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d8995e: startup date [Sat Jan 05 13:53:00 CST 2019]; root of context hierarchy
+2019-01-05 13:53:05.571 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-05 13:53:05.571 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-05 13:53:05.657 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-05 13:53:06.016 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-05 13:53:06.027 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-01-05 13:53:06.027 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-01-05 13:53:06.053 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-01-05 13:53:06.071 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-01-05 13:53:06.451 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2019-01-05 13:53:06.457 [main] INFO  com.course.Application - Started Application in 6.878 seconds (JVM running for 9.345)
+2019-01-05 13:53:57.050 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-05 13:53:57.051 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-05 13:53:57.092 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2019-01-05 13:53:58.399 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 13:53:58.399 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 13:53:58.500 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 13:53:58.500 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 13:53:58.557 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 13:53:58.583 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 13:53:58.583 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 14:00:42.416 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 14:00:42.416 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:00:42.488 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 14:00:42.488 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:00:42.540 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 14:00:42.543 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:00:42.543 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 14:20:30.852 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 14:20:30.853 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:20:30.939 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 14:20:30.939 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:20:30.990 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 14:20:30.993 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:20:30.993 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 14:25:05.820 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 14:25:05.821 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:25:05.918 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 14:25:05.918 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:25:05.999 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 14:25:06.005 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:25:06.005 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 14:26:37.007 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 14:26:37.007 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:26:37.085 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 14:26:37.085 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:26:37.151 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 14:26:37.154 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:26:37.155 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 14:28:42.825 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 14:28:42.826 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:28:42.905 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 14:28:42.905 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:28:42.963 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 14:28:42.967 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:28:42.967 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 14:30:01.550 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 14:30:01.550 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:30:01.627 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 14:30:01.627 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:30:01.676 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 14:30:01.680 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:30:01.680 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 14:38:45.132 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 14:38:45.133 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:38:45.209 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 14:38:45.209 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:38:45.261 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 14:38:45.266 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 14:38:45.266 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 15:25:42.994 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 15:25:42.994 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:25:43.075 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 15:25:43.075 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:25:43.133 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 15:25:43.135 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:25:43.136 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 15:27:29.209 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 15:27:29.209 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:27:29.292 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 15:27:29.292 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:27:29.347 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 15:27:29.350 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:27:29.350 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 15:29:49.088 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 15:29:49.089 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:29:49.170 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 15:29:49.170 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:29:49.224 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 15:29:49.227 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:29:49.227 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 15:33:58.258 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 15:33:58.258 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:33:58.332 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 15:33:58.333 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:33:58.400 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 15:33:58.436 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:33:58.436 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 15:35:44.876 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 15:35:44.876 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:35:44.960 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 15:35:44.960 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:35:45.022 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 15:35:45.025 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:35:45.025 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 15:37:00.349 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 15:37:00.349 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:37:00.426 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 15:37:00.426 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:37:00.479 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 15:37:00.483 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:37:00.483 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 15:37:40.154 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 15:37:40.154 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:37:40.251 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 15:37:40.251 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:37:40.322 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 15:37:40.325 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:37:40.326 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 15:40:43.609 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 15:40:43.610 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:40:43.684 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 15:40:43.684 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:40:43.736 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 15:40:43.739 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:40:43.739 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 15:41:55.891 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 15:41:55.891 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:41:55.974 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 15:41:55.974 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:41:56.027 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 15:41:56.030 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 15:41:56.030 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 16:08:26.587 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 16:08:26.587 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:08:26.713 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 16:08:26.713 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:08:26.806 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:08:26.809 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:08:26.809 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 16:12:28.657 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 16:12:28.658 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:12:28.745 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 16:12:28.746 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:12:28.806 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:12:28.809 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的user=User(id=2, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:12:28.809 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 16:18:43.030 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 16:18:43.031 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:18:43.120 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 16:18:43.120 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:18:43.177 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:18:43.180 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:18:43.180 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 16:30:40.314 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 16:30:40.314 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:30:40.399 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 16:30:40.399 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:30:40.482 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:30:40.531 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 16:30:42.596 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:30:42.599 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:30:42.599 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 16:30:49.992 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是2
+2019-01-05 16:30:49.992 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:30:50.100 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 16:30:50.101 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:31:23.325 [main] INFO  com.course.Application - Starting Application on 53GZVMA29KMR9N2 with PID 13788 (C:\Users\Administrator\IdeaProjects\AutoTest\Chapter13\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\AutoTest)
+2019-01-05 16:31:23.335 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2019-01-05 16:31:23.430 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d8995e: startup date [Sat Jan 05 16:31:23 CST 2019]; root of context hierarchy
+2019-01-05 16:31:24.772 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2019-01-05 16:31:25.354 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5ca10c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-05 16:31:25.722 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2019-01-05 16:31:25.734 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-01-05 16:31:25.735 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-01-05 16:31:25.889 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-05 16:31:25.889 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2459 ms
+2019-01-05 16:31:26.099 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-05 16:31:26.104 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-05 16:31:26.104 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-05 16:31:26.104 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-05 16:31:26.104 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-05 16:31:27.274 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2019-01-05 16:31:27.275 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2019-01-05 16:31:27.276 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2019-01-05 16:31:27.277 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2019-01-05 16:31:27.278 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-05 16:31:27.281 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-05 16:31:27.282 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-05 16:31:27.283 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-05 16:31:27.286 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-05 16:31:27.287 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-05 16:31:27.515 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d8995e: startup date [Sat Jan 05 16:31:23 CST 2019]; root of context hierarchy
+2019-01-05 16:31:27.587 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-05 16:31:27.587 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-05 16:31:27.647 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-05 16:31:28.055 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-05 16:31:28.069 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-01-05 16:31:28.069 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-01-05 16:31:28.088 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-01-05 16:31:28.105 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-01-05 16:31:28.523 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2019-01-05 16:31:28.529 [main] INFO  com.course.Application - Started Application in 5.827 seconds (JVM running for 7.343)
+2019-01-05 16:31:44.000 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-05 16:31:44.001 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-05 16:31:44.038 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2019-01-05 16:31:45.329 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是2
+2019-01-05 16:31:45.329 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:31:45.494 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 16:31:45.494 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:33:08.398 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是2
+2019-01-05 16:33:08.398 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:34:19.519 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是2
+2019-01-05 16:34:19.519 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:39:15.090 [main] INFO  com.course.Application - Starting Application on 53GZVMA29KMR9N2 with PID 14616 (C:\Users\Administrator\IdeaProjects\AutoTest\Chapter13\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\AutoTest)
+2019-01-05 16:39:15.096 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2019-01-05 16:39:15.216 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d8995e: startup date [Sat Jan 05 16:39:15 CST 2019]; root of context hierarchy
+2019-01-05 16:39:16.492 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2019-01-05 16:39:16.980 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$63e5499a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-05 16:39:17.342 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2019-01-05 16:39:17.356 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-01-05 16:39:17.358 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-01-05 16:39:17.513 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-05 16:39:17.513 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2297 ms
+2019-01-05 16:39:17.864 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-05 16:39:17.876 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-05 16:39:17.877 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-05 16:39:17.878 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-05 16:39:17.878 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-05 16:39:19.113 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2019-01-05 16:39:19.114 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2019-01-05 16:39:19.115 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2019-01-05 16:39:19.115 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2019-01-05 16:39:19.116 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-05 16:39:19.119 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-05 16:39:19.120 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-05 16:39:19.121 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-05 16:39:19.125 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-05 16:39:19.125 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-05 16:39:19.329 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d8995e: startup date [Sat Jan 05 16:39:15 CST 2019]; root of context hierarchy
+2019-01-05 16:39:19.432 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-05 16:39:19.432 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-05 16:39:19.483 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-05 16:39:19.759 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-05 16:39:19.770 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-01-05 16:39:19.770 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-01-05 16:39:19.788 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-01-05 16:39:19.801 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-01-05 16:39:20.263 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2019-01-05 16:39:20.272 [main] INFO  com.course.Application - Started Application in 5.682 seconds (JVM running for 7.092)
+2019-01-05 16:39:34.921 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-05 16:39:34.921 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-05 16:39:34.954 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2019-01-05 16:39:36.093 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 16:39:36.094 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:39:36.210 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 16:39:36.210 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:39:36.279 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:39:36.317 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 16:39:38.397 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:39:38.419 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:39:38.419 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 16:43:32.945 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 16:43:32.945 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:43:33.026 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 16:43:33.026 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:43:33.079 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:43:33.087 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 16:43:38.161 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:43:38.166 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:43:38.166 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 16:44:28.973 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 16:44:28.973 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:44:29.052 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 16:44:29.052 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:44:29.108 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:44:29.116 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 16:44:34.222 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:44:34.226 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:44:34.226 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 16:47:55.671 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 16:47:55.671 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:47:55.751 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 16:47:55.752 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:47:55.822 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:47:55.876 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 16:48:00.931 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 16:48:00.937 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 16:48:00.937 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 17:37:08.062 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 17:37:08.064 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:37:08.147 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 17:37:08.147 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:37:08.207 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:37:08.256 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 17:37:13.367 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:37:13.373 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:37:13.374 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 17:42:42.676 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 17:42:42.676 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:42:42.782 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 17:42:42.782 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:42:42.840 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:42:42.874 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 17:42:47.969 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:42:47.973 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:42:47.973 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 17:42:50.055 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:42:50.062 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的user=User(id=0, userName=, password=null, age=, sex=man, permission=null, isDelete=null)
+2019-01-05 17:42:50.062 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是5
+2019-01-05 17:48:59.125 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 17:48:59.125 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:48:59.206 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 17:48:59.206 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:48:59.263 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:48:59.299 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 17:49:04.411 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:49:04.416 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:49:04.417 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 17:49:06.512 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:49:06.515 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的user=User(id=0, userName=cheng, password=null, age=22, sex=man, permission=null, isDelete=null)
+2019-01-05 17:49:06.515 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 17:51:06.486 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 17:51:06.486 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:51:06.573 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 17:51:06.573 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:51:06.631 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:51:06.720 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 17:51:11.848 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:51:11.855 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:51:11.855 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 17:51:13.940 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:51:13.943 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的user=User(id=0, userName=cheng, password=null, age=22, sex=man, permission=null, isDelete=null)
+2019-01-05 17:51:13.944 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 17:52:54.448 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 17:52:54.448 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:52:54.533 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 17:52:54.534 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:52:54.584 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:52:54.599 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 17:53:14.724 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:53:14.729 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:53:14.729 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 17:53:16.802 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:53:16.805 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 传入的user=User(id=0, userName=cheng, password=null, age=22, sex=man, permission=null, isDelete=null)
+2019-01-05 17:53:16.805 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 17:54:45.102 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 17:54:45.103 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:54:45.184 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 17:54:45.184 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:54:45.254 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:54:45.353 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 17:55:05.437 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:55:05.441 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:55:05.441 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 17:55:07.518 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:55:07.522 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的user=User(id=0, userName=cheng, password=null, age=22, sex=man, permission=null, isDelete=null)
+2019-01-05 17:55:07.522 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 17:56:26.672 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 17:56:26.673 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:56:26.759 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 17:56:26.759 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:56:26.823 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:56:26.913 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 17:57:07.047 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:57:07.053 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 17:57:07.053 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 17:57:09.140 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 17:57:09.144 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的user=User(id=0, userName=cheng, password=null, age=22, sex=man, permission=null, isDelete=null)
+2019-01-05 17:57:09.144 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 18:11:28.589 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 18:11:28.589 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:11:28.671 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 18:11:28.671 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:11:28.725 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 18:11:28.729 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:11:28.729 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 18:11:30.843 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 18:11:30.846 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的user=User(id=0, userName=cheng, password=null, age=22, sex=man, permission=null, isDelete=null)
+2019-01-05 18:11:30.846 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 18:12:26.768 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 18:12:26.768 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:12:26.853 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 18:12:26.854 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:12:26.911 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 18:12:26.987 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 18:13:59.552 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 18:13:59.552 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:13:59.680 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 18:13:59.680 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:13:59.746 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 18:13:59.784 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 18:16:12.875 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 18:16:12.875 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:16:13.002 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 18:16:13.002 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:16:13.071 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 18:16:13.112 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 18:20:41.058 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 18:20:41.058 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:20:41.138 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 18:20:41.139 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:20:41.193 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 18:20:41.237 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 18:22:32.492 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 18:22:32.492 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:22:32.571 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 18:22:32.571 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:22:32.628 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 18:22:32.644 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 18:25:56.184 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 18:25:56.184 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:25:56.268 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 18:25:56.268 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:25:56.324 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 18:25:56.448 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 18:29:53.982 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 18:29:53.983 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:29:54.068 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 18:29:54.068 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:29:54.127 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 18:29:54.146 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 18:32:30.373 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 18:32:30.373 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:32:30.464 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 18:32:30.465 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:32:30.529 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 18:32:30.589 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 18:33:37.245 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 18:33:37.245 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:33:37.361 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 18:33:37.361 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 18:33:37.421 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 18:33:37.444 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 21:24:17.404 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 21:24:17.406 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 21:24:17.526 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 21:24:17.526 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 21:24:17.593 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 21:24:17.601 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 21:26:37.858 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 21:26:37.858 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 21:26:37.936 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 21:26:37.936 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 21:26:37.989 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 21:26:38.070 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 21:27:44.814 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 21:27:44.814 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 21:27:44.951 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 21:27:44.951 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 21:27:45.006 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 21:27:45.057 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 21:33:45.489 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 21:33:45.489 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 21:33:45.568 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 21:33:45.569 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 21:33:45.626 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 21:33:45.732 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 21:36:05.753 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 21:36:05.753 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 21:36:05.855 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 21:36:05.855 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 21:36:05.908 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 21:36:06.010 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 22:14:23.210 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 22:14:23.210 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:14:23.507 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 22:14:23.507 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:14:23.708 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:14:23.773 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 22:20:08.393 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 22:20:08.393 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:20:08.476 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 22:20:08.476 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:20:08.528 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:20:08.629 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 22:21:20.048 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 22:21:20.048 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:21:20.124 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 22:21:20.124 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:21:20.175 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:21:20.271 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 22:22:32.940 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 22:22:32.941 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:22:33.023 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 22:22:33.023 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:22:33.078 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:22:33.173 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 22:24:45.407 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 22:24:45.407 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:24:45.492 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 22:24:45.492 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:24:45.544 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:24:45.651 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 22:24:55.765 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:24:55.770 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的user=User(id=0, userName=cheng, password=null, age=22, sex=man, permission=null, isDelete=null)
+2019-01-05 22:24:55.770 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 22:32:01.074 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 22:32:01.075 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:32:01.155 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 22:32:01.155 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:32:01.208 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:32:01.239 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 22:32:11.332 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:32:11.336 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的user=User(id=0, userName=, password=null, age=22, sex=, permission=null, isDelete=null)
+2019-01-05 22:32:11.336 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是3
+2019-01-05 22:33:06.015 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 22:33:06.015 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:33:06.102 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 22:33:06.102 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:33:06.169 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:33:06.243 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 22:33:16.328 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:33:16.333 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:33:16.334 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 22:33:18.427 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:33:18.430 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的user=User(id=0, userName=, password=null, age=22, sex=, permission=null, isDelete=null)
+2019-01-05 22:33:18.430 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是3
+2019-01-05 22:49:24.322 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 22:49:24.323 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:49:24.402 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 22:49:24.402 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:49:24.477 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:49:24.554 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 22:49:34.652 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:49:34.656 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:49:34.657 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 22:49:36.735 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:49:36.826 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2019-01-05 22:49:38.993 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:49:38.997 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的user=User(id=0, userName=, password=null, age=22, sex=, permission=null, isDelete=null)
+2019-01-05 22:49:38.998 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是3
+2019-01-05 22:53:00.806 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 22:53:00.806 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:53:00.902 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 22:53:00.902 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:53:00.970 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:53:01.072 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2019-01-05 22:53:11.177 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:53:11.182 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 传入的user=User(id=1, userName=null, password=null, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 22:53:11.182 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2019-01-05 22:53:13.276 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:53:13.330 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2019-01-05 22:53:21.486 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 22:53:21.491 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的user=User(id=0, userName=, password=null, age=22, sex=, permission=null, isDelete=null)
+2019-01-05 22:53:21.491 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是3
+2019-01-05 23:01:15.247 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 23:01:15.247 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 23:01:15.324 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 23:01:15.324 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 23:01:15.379 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 23:01:15.382 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2019-01-05 23:02:55.009 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 23:02:55.009 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 23:02:55.092 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 23:02:55.092 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 23:02:55.142 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 23:02:55.146 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2019-01-05 23:04:08.024 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是1
+2019-01-05 23:04:08.024 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=cheng, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 23:04:08.101 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是0
+2019-01-05 23:04:08.101 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 传入的User=User(id=0, userName=aa, password=123456, age=null, sex=null, permission=null, isDelete=null)
+2019-01-05 23:04:08.152 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2019-01-05 23:04:08.157 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
